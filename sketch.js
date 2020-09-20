@@ -43,7 +43,8 @@ function setup() {
   thing17 = new Box(570, 40, 40, 40);
   thing18 = new Box(550, 0, 40, 40);
 
-  const mouse = Mouse.create(canvas.elt)
+  const mouse = Mouse.create(canvas.elt);
+  mouse.pixelRatio = pixelDensity();
   var options = {
     mouse: mouse
   }
